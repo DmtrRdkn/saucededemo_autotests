@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="LoginPageTests">
+    <test name="CorrectUser">
+        <groups>
+            <run>
+                <include name="correctLoginTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.AuthorizationTests">
+            </class>
+        </classes>
+    </test>
+    <test name="LockedUser">
+        <groups>
+            <run>
+                <include name="lockedLoginTest"/>
+                <include name="VisualChangesTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.AuthorizationTests">
+            </class>
+        </classes>
+    </test>
+    <test name="emptyLoginTest">
+        <groups>
+            <run>
+                <include name="emptyLoginTest"/>
+                <include name="VisualChangesTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.AuthorizationTests">
+            </class>
+        </classes>
+    </test>
+    <test name="emptyPasswordTest">
+        <groups>
+            <run>
+                <include name="emptyPasswordTest"/>
+                <include name="VisualChangesTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.AuthorizationTests">
+            </class>
+        </classes>
+    </test>
+    <test name="incorrectDataTest">
+        <groups>
+            <run>
+                <include name="incorrectDataTest"/>
+                <include name="VisualChangesTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.AuthorizationTests">
+            </class>
+        </classes>
+    </test>
+</suite>
