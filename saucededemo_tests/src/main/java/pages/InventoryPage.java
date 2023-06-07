@@ -16,6 +16,7 @@ public class InventoryPage extends Page{
     @FindBy(xpath ="//button[@id='react-burger-menu-btn']")
     private WebElement menuBtn;
 
+
     @FindBy(xpath ="//a[@class='shopping_cart_link']")
     private WebElement basketBtn;
 
